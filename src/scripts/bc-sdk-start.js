@@ -98,6 +98,7 @@ bc.openChat = function(chatParams, visitInfo) {
 		if(document.body) {
 			document.body.removeChild(chatContainerElement);
 			window.bcChatOpen = false;
+			document.getElementsByClassName('bcFloat')[0].style.display = 'block';
 		}
 	};
 

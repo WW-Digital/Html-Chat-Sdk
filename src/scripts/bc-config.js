@@ -15,7 +15,7 @@ var bc = window.bc = (window.bc || {});
 			throwErrors: true,
 			useWebsocket: null,
 			jsonp: true,
-			sessionApiKey: null,
+			sessionApiKey: '',
 			messageCache: true,
 			chatCookie: '_bcck',
 			chatRecoverCookie: '_bc-curl',
