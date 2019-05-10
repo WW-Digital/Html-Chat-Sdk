@@ -1,27 +1,27 @@
 <!-- inject:themeSpecific:css -->
-<link rel="stylesheet" href="/sites/all/libraries/boldchat/themes/ww-basic/ww-basic.css"/>
+<link rel="stylesheet" href="/sites/all/libraries/boldchat/src/themes/ww-basic/ww-basic.css" />
 <!-- endinject -->
 
 <!-- inject:boldchat:js -->
-<script src="/sites/all/libraries/boldchat/scripts/bc-api-frame.js"></script>
-<script src="/sites/all/libraries/boldchat/scripts/bc-client.js"></script>
-<script src="/sites/all/libraries/boldchat/scripts/bc-form-builder.js"></script>
-<script src="/sites/all/libraries/boldchat/scripts/bc-localizer.js"></script>
-<script src="/sites/all/libraries/boldchat/scripts/bc-person-type.js"></script>
-<script src="/sites/all/libraries/boldchat/scripts/bc-session-state.js"></script>
-<script src="/sites/all/libraries/boldchat/scripts/bc-session-storage.js"></script>
-<script src="/sites/all/libraries/boldchat/scripts/bc-session.js"></script>
-<script src="/sites/all/libraries/boldchat/scripts/bc-view-manager.js"></script>
+<script src="/sites/all/libraries/boldchat/src/scripts/bc-api-frame.js"></script>
+<script src="/sites/all/libraries/boldchat/src/scripts/bc-client.js"></script>
+<script src="/sites/all/libraries/boldchat/src/scripts/bc-form-builder.js"></script>
+<script src="/sites/all/libraries/boldchat/src/scripts/bc-localizer.js"></script>
+<script src="/sites/all/libraries/boldchat/src/scripts/bc-person-type.js"></script>
+<script src="/sites/all/libraries/boldchat/src/scripts/bc-session-state.js"></script>
+<script src="/sites/all/libraries/boldchat/src/scripts/bc-session-storage.js"></script>
+<script src="/sites/all/libraries/boldchat/src/scripts/bc-session.js"></script>
+<script src="/sites/all/libraries/boldchat/src/scripts/bc-view-manager.js"></script>
 <!-- endinject -->
 
 <div id="bc-chat">
     <div id="bc-chat-header" class="bc-chat-header">
-      <button id="bc-min-chat" type="button" class="bc-button">
-        <span class="bc-button-text-span"></span>
-      </button>
-      <button id="bc-end-chat" type="button" class="bc-button">
-        <span class="bc-button-text-span"></span>
-      </button>
+        <button id="bc-min-chat" type="button" class="bc-button">
+            <span class="bc-button-text-span"></span>
+        </button>
+        <button id="bc-end-chat" type="button" class="bc-button">
+            <span class="bc-button-text-span"></span>
+        </button>
     </div>
     <div id="bc-chat-column" class="bc-chat-column">
         <div class="bc-slide-with-actions" id="bc-chat-history">
@@ -85,7 +85,7 @@
         <div class="bc-hidden" id="bc-chat-actions">
             <div id="bc-typing" class="bc-hidden">
                 <div id="bc-typing-msg">
-                <span id="bc-typers">/* This section will be overwritten by the view-manager file */
+                    <span id="bc-typers">/* This section will be overwritten by the view-manager file */
                 </span>
                     <span class="bc-type-one">.</span>
                     <span class="bc-type-two">.</span>
@@ -96,13 +96,12 @@
                 <div class="bc-row">
                     <div class="bc-cell bc-cell-left">
                         <div class="bc-send-msg-col1">
-                            <input type="text" id="bc-send-msg-text" name="bc-msg-history" data-l10n-placeholder="api#chat#send_message"/>
+                            <input type="text" id="bc-send-msg-text" name="bc-msg-history" data-l10n-placeholder="api#chat#send_message" />
                         </div>
                     </div>
                     <div class="bc-cell bc-cell-right">
                         <div class="bc-send-msg-col2">
-                            <button id="bc-send-msg-btn" class="bc-button" data-l10n="api#chat#send"
-                                    type="button"></button>
+                            <button id="bc-send-msg-btn" class="bc-button" data-l10n="api#chat#send" type="button"></button>
                         </div>
                     </div>
                 </div>
@@ -117,8 +116,8 @@
     <div class="bc-busy-img"></div>
 </div>
 <div id="bc-minimized-indicator" class="bc-minimized-indicator">
-  <div class="bc-new-message" data-l10n="api#activeassist#message"></div>
-  <button id="bc-max-chat" type="button" class="bc-button">
-    <span class="bc-button-text-span"></span>
-  </button>
+    <div class="bc-new-message" data-l10n="api#activeassist#message"></div>
+    <button id="bc-max-chat" type="button" class="bc-button">
+        <span class="bc-button-text-span"></span>
+    </button>
 </div>
