@@ -1,10 +1,10 @@
 {
   "name": "@ww-digital/boldchat-html-sdk",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "BoldChat's HTML Chat Window SDK",
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/WW-Digital/Html-Chat-Sdk",
+    "url" : "https://github.com/WW-Digital/Html-Chat-Sdk"
   },
   "scripts": {
     "create": "gulp create-final-build && gulp inject-popup-html",
