@@ -1,8 +1,7 @@
 {
-  "name": "boldchat-html-sdk",
+  "name": "@ww-digital/boldchat-html-sdk",
   "version": "0.0.2",
   "description": "BoldChat's HTML Chat Window SDK",
-  "private": true,
   "scripts": {
     "create": "gulp create-final-build && gulp inject-popup-html",
     "gulp": "gulp",
