@@ -1,25 +1,27 @@
 {
   "name": "@ww-digital/boldchat-html-sdk",
-  "version": "0.0.8",
+  "version": "0.0.13",
   "description": "BoldChat's HTML Chat Window SDK",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/WW-Digital/Html-Chat-Sdk"
+    "type": "git",
+    "url": "https://github.com/WW-Digital/Html-Chat-Sdk"
   },
   "scripts": {
+    "build": "gulp clean && gulp theme && gulp js && gulp clean-js",
     "create": "gulp create-final-build && gulp inject-popup-html",
     "gulp": "gulp",
     "integration": "gulp integration",
     "preinstall": "npm prune",
     "test": "gulp test",
     "zips:dev": "gulp zip-files",
-    "zips:prod": "gulp zip-files --prod --min --minhtml"
+    "zips:prod": "gulp js:prod"
   },
   "devDependencies": {
     "@types/node": "^8.0.28",
     "del": "^3.0.0",
     "eslint": "^4.6.1",
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^3.8.0",
     "gulp-concat": "^2.6.1",
     "gulp-exit": "^0.0.2",

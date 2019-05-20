@@ -4,25 +4,25 @@
   var bcLoad = function() {
     if (window.bcLoaded) return;
     window.bcLoaded = true;
-    const vms = document.createElement('script'); vms.type = 'text/javascript'; vms.async = true;
-    vms.onload = () => {
+    var vms = document.createElement('script'); vms.type = 'text/javascript'; vms.async = true;
+    vms.onload = function() {
       if (!window.bcChatOpen) {
         showButton();
       }
     };
     vms.src = '//vmss.boldchat.com/aid/151112516418848081/bc.vms4/vms.js';
-    const s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vms, s);
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vms, s);
   };
   // end snippet
 
   // custom function that determines if chat button should be shown
   var showButton = function() {
-    const interval = 100;
-    const maxTimeLimit = 10 * 1000;
-    let currentTime = 0;
-    let bcFloat;
-    const intervalId = setInterval(() => {
-      [bcFloat] = document.getElementsByClassName('bcFloat');
+    var interval = 100;
+    var maxTimeLimit = 10 * 1000;
+    var currentTime = 0;
+    var bcFloat;
+    var intervalId = setInterval(function() {
+      bcFloat = document.getElementsByClassName('bcFloat')[0];
       if (bcFloat && bcFloat.style.display === 'none') {
         bcFloat.style.display = 'block';
         clearInterval(intervalId);
