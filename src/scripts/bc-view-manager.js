@@ -423,6 +423,12 @@ bc.ViewManager = function(formBuilder) {
 		return strbuf;
 	};
 
+  var endChatCallBack = function(){
+    scope.hideQueueMessage();
+    scope.clearOperatorTypers();
+    scope.hideStatusMessage();
+    scope.session.endChat();
+  };
 
 	var appendOriginalTranslation = function(messageObject, originalText) {
 		if(typeof messageObject !== 'undefined') {
@@ -665,18 +671,14 @@ bc.ViewManager = function(formBuilder) {
 		var endChatButton = document.getElementById('bc-end-chat');
 		if(endChatButton) {
 			endChatButton.addEventListener('click', function() {
-				scope.hideQueueMessage();
-				scope.clearOperatorTypers();
-				scope.session.endChat();
+				endChatCallBack();
 			});
 		}
 
 		var endButton = document.getElementById('bc-end');
 		if(endButton) {
 			endButton.addEventListener('click', function() {
-				scope.hideQueueMessage();
-				scope.clearOperatorTypers();
-				scope.session.endChat();
+				endChatCallBack();
 			});
 		}
 

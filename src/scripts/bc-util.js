@@ -185,6 +185,9 @@ bc.util.loadJavascript = function(element, callback) {
 
 	var newScripts = [];
 	var scripts = element.getElementsByTagName('script');
+  if (scripts.length === 0) {
+    return callback();
+  }
 	while(scripts.length > 0) {
 		var scriptTag = document.createElement('script');
 		scriptTag.setAttribute('type', 'text/javascript');
@@ -621,3 +624,22 @@ bc.util.msieversion = function() {
 	}
 };
 
+/**
+ * Hide floating chat button
+ */
+bc.util.hideFloat = function() {
+  var bcFloat = document.getElementsByClassName('bcFloat')[0];
+  if (bcFloat) {
+    bcFloat.style.display = 'none';
+  }
+};
+
+/**
+ * Show floating chat button
+ */
+bc.util.showFloat = function() {
+  var bcFloat = document.getElementsByClassName('bcFloat')[0];
+  if (bcFloat) {
+    bcFloat.style.display = 'block';
+  }
+};
