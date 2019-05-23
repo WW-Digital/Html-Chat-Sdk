@@ -96,7 +96,7 @@ bc.openChat = function(chatParams, visitInfo) {
 		chatContainerElement.style.visibility = 'hidden';
 		removeMetaTag();
 		if(document.body) {
-      bc.util.showFloat();
+      			bc.util.showFloat();
 			document.body.removeChild(chatContainerElement);
 			window.bcChatOpen = false;
 		}
@@ -140,8 +140,8 @@ bc.openChat = function(chatParams, visitInfo) {
 
 			hideInvite(0);
 			addMetaTag(document.getElementsByTagName('head')[0], document);
-      document.body.appendChild(chatContainerElement);
-      chatContainerElement.style.visibility = 'hidden';
+      			document.body.appendChild(chatContainerElement);
+      			chatContainerElement.style.visibility = 'hidden';
 			bc.util.loadJavascript(chatContainerElement, startSession);
 			bc.util.log('afterLoadJavascript');
 		}

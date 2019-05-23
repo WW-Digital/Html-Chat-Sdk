@@ -167,7 +167,7 @@ bc.Session = function(apiKey, chatParams, visitorInfo, viewManager) {
 
 		this.viewManager.initialize(this);
 		scope.viewManager.showBusy();
-    bc.util.hideFloat();
+    		bc.util.hideFloat();
 		if(this.client.hasChatKey()) {
 			this.client.startChat()
 				.success(function(startData) {
@@ -304,7 +304,7 @@ bc.Session = function(apiKey, chatParams, visitorInfo, viewManager) {
 			case 'prechat':
 			case 'postchat':
 			case 'unavailable':
-      case 'done':
+      			case 'done':
 				scope.client.finishChat();
 				scope.viewManager.closeChat();
 				scope.viewManager.hideForm();
@@ -561,14 +561,14 @@ bc.Session = function(apiKey, chatParams, visitorInfo, viewManager) {
 
 	this._chatEndedByOp = function(data) {
 		bc.util.log('session:this_chatEndeByOp');
-    scope.viewManager.hideMessages();
+    		scope.viewManager.hideMessages();
 		scope.viewManager.hideChatInteraction();
 		scope.viewManager.showForm('api#chat#operator_ended', null, null, 'api#chat#close', scope._chatEndedByOpSubmitted, null, null, true);
 	};
 
 	this._processChatEndData = function(data) {
 		scope.viewManager.hideBusy();
-    scope.viewManager.hideMessages();
+    		scope.viewManager.hideMessages();
 		if(data && data.PostChat) {
 			//TODO: The intro is being displayed even though the form may be not be applicable (not enough chat interaction to qualify for post-chat form)
 			var introKey = 'api#postchat#intro';

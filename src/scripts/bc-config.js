@@ -12,7 +12,7 @@ var bc = window.bc = (window.bc || {});
 		bc.config = {
 			initialized: true,
 			logging: true,
-      debug: false,
+      			debug: false,
 			throwErrors: true,
 			useWebsocket: null,
 			jsonp: true,
