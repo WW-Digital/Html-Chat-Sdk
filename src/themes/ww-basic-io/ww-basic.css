@@ -217,6 +217,7 @@
   left: 16px;
   font-size: 16px;
   cursor: text;
+  font-weight: normal;
 }
 
 .bc-input-placeholder input:focus + label,
@@ -342,6 +343,7 @@
   -moz-box-shadow: 0 6px 12px 2px rgba(0, 0, 0, 0.12);
   box-shadow: 0 6px 12px 2px rgba(0, 0, 0, 0.12);
   border: #151515;
+  border-radius: 5px 5px 0 0;
 }
 
 .bc-chat-header {
@@ -935,6 +937,7 @@ button#bc-min-chat:focus {
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5;
+  margin-bottom: 15px;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
@@ -993,13 +996,6 @@ div[data-l10n="api#postchat#intro"] {
   height: 75px;
 }
 
-.bc-input-placeholder {
-  display: flex;
-  flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse ;
-  -webkit-flex-direction: column-reverse;
-}
-
 .bc-input-placeholder textarea.bc-not-empty + label[data-l10n="api#comments#placeholder"],
 .bc-input-placeholder textarea:focus + label[data-l10n="api#comments#placeholder"] {
   display: block;
@@ -1015,7 +1011,7 @@ div[data-l10n="api#postchat#intro"] {
 }
 
 .bc-input-placeholder input[type="email"] {
-  margin: 15px 0 45px;
+  margin-bottom: 45px;
 }
 
 .bc-input-placeholder input[type="email"] + label[data-l10n="api#email_transcript#placeholder"] {
