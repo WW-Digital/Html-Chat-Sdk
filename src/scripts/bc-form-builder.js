@@ -628,7 +628,7 @@ bc.FormBuilder = function(localizer) {
 				var container = createContainer(getAdditionalClassNames(field));
 				switch(field.Type) {
 					case 'text':
-						if(field.MultiLine) {
+						if(field.MultiLine && field.Key !== 'initial_question') {
 							container.appendChild(createTextArea(field));
 							form[builder](container);
 						}

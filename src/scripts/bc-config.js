@@ -12,6 +12,7 @@ var bc = window.bc = (window.bc || {});
 		bc.config = {
 			initialized: true,
 			logging: true,
+      			debug: false,
 			throwErrors: true,
 			useWebsocket: null,
 			jsonp: true,
@@ -36,7 +37,7 @@ var bc = window.bc = (window.bc || {});
 			viewPortMetaTagContent: 'width=device-width, height=device-height, initial-scale=1, maximum-scale=1.0, user-scalable=no, viewport-fit=cover',
 
 			displayTypingOperatorImage: true,
-			defaultCompanyLogoLocation: 'images/unknown-customer.png'
+			defaultCompanyLogoLocation: ''
 		};
 	}
 
