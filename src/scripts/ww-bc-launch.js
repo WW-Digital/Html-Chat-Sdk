@@ -34,23 +34,6 @@
     }, interval);
   };
 
-  // hide placeholder
-  document.getElementsByTagName('body')[0].addEventListener('click', function(event) {
-    if (event.target.classList.contains('bc-input-label')) {
-      var input = document.querySelector('.bc-input-placeholder');
-      input.addEventListener('keyup', function() { hideLabel(this) });
-      input.addEventListener('onblur', function() { hideLabel(this) });
-    }
-  });
-
-  var hideLabel = function(obj) {
-    if (obj.querySelector('input').value !== '') {
-      obj.querySelector('.bc-input-label').style.display = 'none';
-    } else {
-      obj.querySelector('.bc-input-label').style.display = 'block';
-    }
-  };
-
   // static parameters provided by boldchat - these shouldn't really change
   window._bcvma = window._bcvma || [];
   window._bcvma.push(['setAccountID', '151112516418848081']);
