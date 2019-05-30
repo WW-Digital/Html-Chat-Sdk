@@ -1008,6 +1008,7 @@ div[data-l10n="api#postchat#intro"] {
   font-size: 16px;
   font-weight: bold;
   padding-bottom: 15px;
+  display: inline-block;
 }
 
 .bc-input-placeholder input[type="email"] {
