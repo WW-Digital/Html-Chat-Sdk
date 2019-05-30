@@ -44,6 +44,7 @@ gulp.task('old-js', function() {
 
 var startSrc = [
 	'./src/scripts/bc-util.js',
+	'./src/scripts/bc-theme-config.js',
 	'./src/scripts/bc-config.js',
 	'./src/scripts/bc-sdk-start.js',
 	'./src/scripts/ww-bc-launch.js'
