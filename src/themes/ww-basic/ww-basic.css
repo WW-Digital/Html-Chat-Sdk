@@ -351,6 +351,7 @@
   border-radius: 5px 5px 0 0;
   background-color: #05a580;
   background-image: url('img/chat-header-expanded.png');
+  background-size: contain;
 }
 
 .bc-chat-column {
@@ -742,6 +743,7 @@ button#bc-min-chat:focus {
 
 #bc-minimized-indicator {
   background-image: url('img/chat-header-minimized.png');
+  background-size: contain;
   position: fixed;
   height: 0;
   visibility: hidden;
@@ -855,6 +857,7 @@ button#bc-min-chat:focus {
   height: 35px;
   bottom: 0;
   left: 10px;
+  background-size: cover;
   background-image: url("img/agent-avatar-default.png");
 }
 
