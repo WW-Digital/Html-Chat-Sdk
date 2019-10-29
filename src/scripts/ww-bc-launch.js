@@ -38,8 +38,14 @@
   window._bcvma = window._bcvma || [];
   window._bcvma.push(['setAccountID', '151112516418848081']);
   window._bcvma.push(['setParameter', 'WebsiteID', '151836461122719597']);
-  window._bcvma.push(['addFloat', { type: 'chat', id: '151836485762052957' }]);
   window._bcvma.push(['pageViewed']);
+  // button ID is now dynamic VS-10644
+  // fall back is US button ID
+  if (window._bcButtonId !== 'undefined') {
+    window._bcvma.push(['addFloat', { type: 'chat', id: window._bcButtonId }]);
+  } else {
+    window._bcvma.push(['addFloat', { type: 'chat', id: '151996451744943758' }]);
+  }
 
   if (window.pageViewer && pageViewer.load) {
     pageViewer.load();

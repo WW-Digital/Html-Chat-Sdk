@@ -350,7 +350,7 @@
   height: 50px;
   border-radius: 5px 5px 0 0;
   background-color: #05a580;
-  background-image: url('img/bc-header-us.png');
+  background-image: url('img/chat-header-expanded.png');
 }
 
 .bc-chat-column {
@@ -741,7 +741,7 @@ button#bc-min-chat:focus {
 }
 
 #bc-minimized-indicator {
-  background-image: url('img/bc-minimized-us.png');
+  background-image: url('img/chat-header-minimized.png');
   position: fixed;
   height: 0;
   visibility: hidden;
