@@ -311,6 +311,14 @@
   transition: all ease 0.3s;
 }
 
+.bc-dyn-button-text {
+  position: absolute;
+  left: 50px;
+  top: 14px;
+  color: #FFF;
+  font-weight: bold;
+}
+
 #bc-layered-chat textarea,
 #bc-popup-chat textarea {
   resize: none;
