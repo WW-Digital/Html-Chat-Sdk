@@ -1,6 +1,6 @@
 {
   "name": "@ww-digital/boldchat-html-sdk",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "BoldChat's HTML Chat Window SDK",
   "repository": {
     "type": "git",
